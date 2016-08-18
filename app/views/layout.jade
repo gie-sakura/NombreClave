@@ -10,4 +10,27 @@ html(lang='en')
       if ENV_DEVELOPMENT
         script(src='http://localhost:35729/livereload.js')
   body
+    header(id="header")
+      div(class="container")
+        //logo
+        a(href="/" id="logo")
+          img(src="img/logo2.png" alt="Logo")
+        //logo
+        //nav
+        nav(id="main-nav")
+          ul
+            li(class="current")
+              a(href="/") Principal
+            li
+              a(href="/sobremi") Sobre mí
+            li
+              a(href="eventos") Eventos
+            li
+              a(href="index.html") Música
+            li
+              a(href="/galeria") Galería
+            li
+              a(href="#") Blog
+            li
+              a(href="contact.html") Contacto
     block content
